@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Js</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/icon.css">
+</head>
+
+<body>
+
+    <div class="my40">
+        <div class="container">
+            <div class="card-panel hoverable center-align">
+                <h1 class="textGreen">Calculator</h1>
+                <blockquote>
+                    This calculator can perform four basic mathematical operations such as addition, subtraction,
+                    multiplication and division.
+                    <br>
+                    Developer Mohammad Sadra Boroumand
+                </blockquote>
+                <!-- input Number -->
+                <div class="row">
+                    <div class="col s10">
+                        <div class="input-field">
+                            <i class="material-icons prefix">data_usage</i>
+                            <input id="enterNumber" placeholder="Number" type="text" class="validate text-blue">
+                            <label for="enterNumber" class="text-blue">Enter Number</label>
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <button onclick="clearAll()" id="btn"
+                            class="btn-floating my10 btn-large waves-effect waves-light red"><i
+                                class="material-icons">backspace</i></button>
+                    </div>
+                </div>
+
+                <!-- numbers -->
+                <div class="row">
+                    <!-- 9 8 7 + -->
+
+                    <div class="col s3">
+                        <button id="btn7" onclick="addNum(7)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">7</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn8" onclick="addNum(8)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">8</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn9" onclick="addNum(9)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">9</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btnP" onclick="btnOperator('+')"
+                            class="btn-floating my10 btn-large waves-effect waves-light green"><i
+                                class="material-icons">add</i></button>
+                    </div>
+
+                    <!-- 6 5 4 - -->
+                    <div class="col s3">
+                        <button id="btn4" onclick="addNum(4)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">4</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn5" onclick="addNum(5)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">5</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn6" onclick="addNum(6)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">6</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btnR" onclick="btnOperator('-')"
+                            class="btn-floating my10 btn-large waves-effect waves-light red"><i
+                                class="material-icons">remove</i></button>
+                    </div>
+
+                    <!-- 1 2 3 * -->
+                    <div class="col s3">
+                        <button id="btn1" onclick="addNum(1)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">1</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn2" onclick="addNum(2)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">2</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btn3" onclick="addNum(3)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">3</button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btnM" onclick="btnOperator('*')"
+                            class="btn-floating my10 btn-large waves-effect waves-light orange"><i
+                                class="material-icons">close</i></button>
+                    </div>
+
+                    <!-- 0 . = / -->
+                    <div class="col s3">
+                        <button id="btn0" onclick="addNum(0)"
+                            class="btn-floating my10 btn-large waves-effect waves-light blue">0</button>
+                    </div>
+                    <div class="col s3">
+                        <!-- <button id="btnDot" onclick="addNum('.')" class="btn-floating my10 btn-large waves-effect waves-light blue">.</button> -->
+                    </div>
+                    <div class="col s3">
+                        <button id="btnE" onclick="btnEqual()"
+                            class="btn-floating my10 btn-large waves-effect waves-light indigo darken-4"><i
+                                class="material-icons">drag_handle</i></button>
+                    </div>
+                    <div class="col s3">
+                        <button id="btnD" onclick="btnOperator('/')"
+                            class="btn-floating my10 btn-large waves-effect waves-light pink"><i
+                                class="material-icons">÷</i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+    <script src="js/materialize.min.js"></script>
+</body>
+
+</html>
